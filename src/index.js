@@ -1,7 +1,7 @@
 const express= require('express')
 const cors= require('cors')
 const path = require ('path')  
-const port=3333
+const port=process.env.Port || 3333
 
 const usuarioRoutes= require('./routes/UsuarioRoutes')
 const EstudanteRoutes= require('./routes/EstudanteRontes')
