@@ -1,4 +1,4 @@
-const User= require('../../models/user')
+const User= require("../../models/User")
 const Vendas= require('../../models/VendaManuais')
 const Cadastrados= require('../../models/Cadastros')
 const PagamentosMulta= require('../../models/pagamentosMultas')
