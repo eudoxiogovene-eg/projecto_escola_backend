@@ -3,7 +3,7 @@ const cors= require('cors')
 const path = require ('path')  
 const port=process.env.Port || 3333
 
-//const usuarioRoutes= require('./routes/UsuarioRoutes')
+const usuarioRoutes= require('./routes/UsuarioRoutes')
 const EstudanteRoutes= require('./routes/EstudanteRontes')
 const PagamentoRoutes= require('./routes/Pagamentos')
 const MultasRoutes= require('./routes/Multas') 
@@ -49,7 +49,7 @@ app.use(
 app.use(express.json())
 app.use('/files',express.static(path.resolve(__dirname, '..', 'uploads')))
 
-//app.use(usuarioRoutes)
+app.use(usuarioRoutes)
 app.use(EstudanteRoutes)
 app.use(PagamentoRoutes)
 app.use(MultasRoutes)
